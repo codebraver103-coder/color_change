@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="test">
+    <h1>Click the buttons to change the background color!</h1>
+    <button id="color">Red</button>
+    <button id="color2">Blue</button>
+    <button id="color3">Green</button>
+    <button id="reset">Reset</button>
+<script>
+    document.getElementById('color').addEventListener('click',function(){
+        document.getElementById('test').style.backgroundColor='red';
+    })
+     document.getElementById('color2').addEventListener('click',function(){
+        document.getElementById('test').style.backgroundColor='blue';
+    })
+     document.getElementById('color3').addEventListener('click',function(){
+        document.getElementById('test').style.backgroundColor='green';
+    })
+    document.getElementById('reset').addEventListener('click',function(){
+        document.getElementById('test').style.backgroundColor='white';
+    })
+</script>
+</body>
+</html>
